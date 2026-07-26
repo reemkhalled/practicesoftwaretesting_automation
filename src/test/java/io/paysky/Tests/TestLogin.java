@@ -25,6 +25,7 @@ public class TestLogin extends BaseTest {
 
         //Navigate to Login Page & Assert the Login URL
         loginPage.goToLoginPage();
+        loginPage.goToLoginPage();
 
         String actualLoginPageUrl = LoginPage.getLoginPageUrl();
         String expectedLoginPageUrl = "https://practicesoftwaretesting.com/auth/login";
