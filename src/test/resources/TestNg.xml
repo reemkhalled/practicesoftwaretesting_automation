@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation_Suite">
+
+    <test name="Dynamic_Testing_Execution">
+        <!-- 1. Define which groups to run -->
+        <groups>
+            <run>
+                <include name="E2E"/>
+               <include name="Login"/>
+            </run>
+        </groups>
+
+        <!-- 2. Keep all your classes safely listed here -->
+        <classes>
+            <class name="io.paysky.Tests.TestRegister"/>
+            <class name="io.paysky.Tests.TestLogin"/>
+            <class name="io.paysky.Tests.TestE2EPurchase"/>
+        </classes>
+    </test>
+
+</suite>
